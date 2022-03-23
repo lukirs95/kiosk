@@ -180,6 +180,7 @@ module.exports = (env, argv) => {
           warnings: false
         }
       },
+      disableHostCheck: true,
       hot: isDevMode,
       port: 9000,
       setupMiddlewares: (middlewares, devServer) => {
