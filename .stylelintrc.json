@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-pseudo-element-colon-notation" : "single",
+    "no-descending-specificity": [true, {"ignore": ["selectors-within-list"]}],
+    "font-family-no-missing-generic-family-keyword": [true, {"ignoreFontFamilies": ["/Font Awesome/"]}]
+  }
+}

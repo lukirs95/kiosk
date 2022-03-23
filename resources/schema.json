@@ -1,0 +1,50 @@
+{
+  "type": "array",
+  "format": "table",
+  "title": "Eissorten",
+  "items": {
+    "type": "object",
+    "properties": {
+      "flavor": {
+        "title": "Name",
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "title": "Typ",
+        "enum": [
+          "milcheis",
+          "fruchteis",
+          "speiseeis",
+          "heading"
+        ]
+      },
+      "additives": {
+        "type": "object",
+        "format": "grid",
+        "options": {
+          "input_width": "200px"
+        },
+        "properties": {
+          "V": {
+            "type": "boolean",
+            "format": "checkbox"
+          },
+          "L": {
+            "type": "boolean",
+            "format": "checkbox"
+          },
+          "G": {
+            "type": "boolean",
+            "format": "checkbox"
+          },
+          "A": {
+            "type": "boolean",
+            "format": "checkbox"
+          }
+        }
+      }
+    },
+    "propertyOrder": 1
+  }
+}
