@@ -4,23 +4,23 @@ class Additive {
     this._element.classList.add('additive');
     this._element.textContent = type;
   }
+
   /**
    *
    * @param {HTMLElement} parent
    *
    * @returns {Additive}
    */
-
   init(parent) {
     parent.appendChild(this._element);
 
     return this;
   }
+
   /**
    *
    * @param {HTMLElement} parent
    */
-
   destroy(parent) {
     parent.removeChild(this._element);
   }
@@ -62,11 +62,11 @@ class Flavor {
     this._element.appendChild(this.name);
     this._additives.forEach((additive) => additive.init(this._element));
   }
+
   /**
    *
    * @param {HTMLElement} parent
    */
-
   destroy(parent) {
     this._additives = this._additives.map((additive) => {
       additive.destroy(this._element);

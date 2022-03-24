@@ -41,6 +41,14 @@
           "A": {
             "type": "boolean",
             "format": "checkbox"
+          },
+          "E": {
+            "type": "boolean",
+            "format": "checkbox"
+          },
+          "N": {
+            "type": "boolean",
+            "format": "checkbox"
           }
         }
       }
